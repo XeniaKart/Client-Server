@@ -22,12 +22,16 @@
 - После отправки сервер не разрывает соединение с клиентом, а ждёт от клиента следующее число.
 
 ### Сборка и запуск
-Сборка
+Сборка:
 ```
     kotlinc src\task2.kt -include-runtime -d task2.jar
 ```
 
-Запуск
+Запуск сервера:
 ```
-    java -jar task2.jar
+    java -jar task2.jar server localhost 9000
+```
+Запуск клиента: 
+```
+    java -jar task2.jar client localhost 9000
 ```
